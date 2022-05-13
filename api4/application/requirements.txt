@@ -1,6 +1,5 @@
 flask
 requests
-unittest.mock
 flask_testing
 pytest 
 pytest-cov 
