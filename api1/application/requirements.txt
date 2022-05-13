@@ -3,4 +3,4 @@ requests
 flask_testing
 pytest 
 pytest-cov 
-requests
+requests_mock
