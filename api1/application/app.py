@@ -6,7 +6,7 @@ app = Flask(__name__)
 def get_rpgrole():
     rpgrole = requests.get('http://localhost:5001/get/rpgrole').text # service 2
     stat = requests.post('http://localhost:5002/post/rpgrole', data=rpgrole) # service 3
-    a_str = rpgrole + ',' + stat.text
+    a_str = rpgrole + ',' + stat.text # concat between rpg and stat to be passed to service 4
     desc = requests.post('http://localhost:5003/post/desc', data=a_str) #service 4
     return render_template('home.html', title='Welcome', rpgrole=rpgrole, stat=stat.text, desc=desc.text)
 
