@@ -1,8 +1,8 @@
 # # refresh build
-# docker stop $(docker ps -a -q)
-# docker rm $(docker ps -a -q)
-# docker rmi $(docker images -a -q)
-# docker network rm apinetwork
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker rmi $(docker images -a -q)
+docker network rm apinetwork
 
 # Build Images
 docker build -t service1 api1/application
