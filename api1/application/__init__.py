@@ -2,6 +2,7 @@ from flask import Flask, render_template, url_for
 import requests
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
 @app.route('/rpgrole/stat/desc', methods=['GET'])
 def get_rpgrole():
     rpgrole = requests.get('http://service2:5001/get/rpgrole').text # service 2

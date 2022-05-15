@@ -1,8 +1,8 @@
 version: '3.8'
 services:
   service1:
-    image: zidane912/rpgrole1:latest
-    build: api1/application
+    image: zidane912/rpg1:latest
+    build: ./api1/application
     container_name: service1
     deploy:
       replicas: 2 # ask why 2 is it for swarm
@@ -10,8 +10,8 @@ services:
     - published: 5000
       target: 5000
   service2:
-    image: zidane912/rpgrole2:latest
-    build: api2/application
+    image: zidane912/rpg2:latest
+    build: ./api2/application
     container_name: service2
     deploy:
       replicas: 2
@@ -19,8 +19,8 @@ services:
     - published: 5001
       target: 5001
   service3:
-    image: zidane912/rpgrole3:latest
-    build: api3/application
+    image: zidane912/rpg3:latest
+    build: ./api3/application
     container_name: service3
     deploy:
       replicas: 2
@@ -28,8 +28,8 @@ services:
     - published: 5002
       target: 5002
   service4:
-    image: zidane912/rpgrole4:latest
-    build: api4/application
+    image: zidane912/rpg4:latest
+    build: ./api4/application
     container_name: service4
     deploy:
       replicas: 2
