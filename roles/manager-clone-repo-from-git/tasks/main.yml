@@ -1,0 +1,8 @@
+---
+# tasks file for manager-clone-repo-from-git
+# git module is built in so does not need to be installed
+
+- name: Clone a repo with separate git directory
+  ansible.builtin.git:
+    repo: https://github.com/Zidane912/finalproject2.git
+    dest: /home/alam_/finalproject2

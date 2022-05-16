@@ -1,0 +1,20 @@
+---
+- hosts: managers
+  become: true # makes terminal execute a sudo command
+  roles:
+  - docker
+  - manager
+
+- hosts: workers
+  become: true
+  roles:
+  - docker
+  - worker
+
+# next bit is for docker stack deploy, where pyaml and jsondiff needed, that must be done after worker joins swarm
+# this makes manager clone down repo which has the docker yaml file
+- hosts: managers
+  become: true
+  roles: 
+  - manager-clone-repo-from-git
+  - stack-deploy
