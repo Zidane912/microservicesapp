@@ -59,7 +59,7 @@ The application should be running on port 80 now.
 
 Four tests were run using pytest, one for each microservice, giving an average of 93 % coverage, below are some screenshots of the report coverages:
 
-![image](https://user-images.githubusercontent.com/96538941/169012408-21076791-fe49-415a-9185-d0654db96b7e.png)
+![image](https://user-images.githubusercontent.com/96538941/169017452-e3eb7296-7e9a-465a-ad42-cf41c5fc4c37.png)
 
 ![image](https://user-images.githubusercontent.com/96538941/169013017-2494ca4e-188e-4684-a036-34eb7d9cb652.png)
 
