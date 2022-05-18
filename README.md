@@ -59,28 +59,13 @@ The application should be running on port 80 now.
 
 Four tests were run using pytest, one for each microservice, giving an average of 93 % coverage, below are some screenshots of the report coverages:
 
-+ cd finalproject2/api1
-+ python3 -m pytest --cov=application
-============================= test session starts ==============================
-platform linux -- Python 3.6.9, pytest-7.0.1, pluggy-1.0.0
-rootdir: /home/jenkins/.jenkins/workspace/Final Project 2/finalproject2/api1
-plugins: cov-3.0.0, requests-mock-1.9.3
-collected 10 items
+![image](https://user-images.githubusercontent.com/96538941/169012408-21076791-fe49-415a-9185-d0654db96b7e.png)
 
-testing/test_mock.py ..........                                          [100%]
+![image](https://user-images.githubusercontent.com/96538941/169013017-2494ca4e-188e-4684-a036-34eb7d9cb652.png)
 
------------ coverage: platform linux, python 3.6.9-final-0 -----------
-Name                      Stmts   Miss  Cover
----------------------------------------------
-application/__init__.py      12      1    92%
----------------------------------------------
-TOTAL                        12      1    92%
+![image](https://user-images.githubusercontent.com/96538941/169013254-5f29fcd7-3ccb-4e3a-ab6f-284011f80a74.png)
 
-![image](https://user-images.githubusercontent.com/96538941/169009164-5ab740f2-5c61-4a67-a60b-f2731c7286a1.png)
-
-![image](https://user-images.githubusercontent.com/96538941/169009396-21423225-e1e8-4e5d-a16e-910156745a44.png)
-
-![image](https://user-images.githubusercontent.com/96538941/169009508-d962428c-5a28-45a4-89c0-cac29d114cc5.png)
+![image](https://user-images.githubusercontent.com/96538941/169013452-aa7cc6c5-48a5-4a56-b56e-03c57fcb880a.png)
 
 # User Journey Story
 
@@ -114,5 +99,7 @@ Webhooks was used to keep track of changes made to the project:
 
 ![cicd drawio](https://user-images.githubusercontent.com/96538941/169002365-304c58cf-dff1-4a89-a4c4-6fe9f22cf05e.png)
 
-# Evolution of Project
+# Future Improvements
 
+* Integrate user input system, i.e. application displays name of user and data generated is associated with user
+* Implement frontend with CSS to improve user experience
