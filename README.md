@@ -83,7 +83,7 @@ Please refer to the project board on this repository or click on this link: http
 
 Here is the final set of build steps of the Jenkins pipeline:
 
-![image](https://user-images.githubusercontent.com/96538941/169010110-3cead732-bef2-46c1-84ab-5e69c76886f0.png)
+![image](https://user-images.githubusercontent.com/96538941/169018009-a4a9e5e0-cfdb-4b39-8582-753ab415b9e1.png)
 
 **NOTE:** Although the final step 'Deployment of Application gives an error, the pipeline still functtions perfectly. This error is due to ports already being assigned on this virtual machine, here is the error message that is shown on the console output:
 
@@ -93,7 +93,7 @@ It is known that the pipeline still works as the port 5000 of the public address
 
 Webhooks was used to keep track of changes made to the project:
 
-![image](https://user-images.githubusercontent.com/96538941/169010996-d6b21950-05d9-489b-bc1d-d514ed83c2a4.png)
+![image](https://user-images.githubusercontent.com/96538941/169018206-a87f17f5-dca6-485b-a16a-34b877492ed7.png)
 
 # Continuous Integration and Delivery Diagram
 
