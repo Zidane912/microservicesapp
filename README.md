@@ -59,7 +59,22 @@ The application should be running on port 80 now.
 
 Four tests were run using pytest, one for each microservice, giving an average of 93 % coverage, below are some screenshots of the report coverages:
 
-![image](https://user-images.githubusercontent.com/96538941/169008921-1c1806b6-e655-4774-94be-b4026f8a7d3e.png)
++ cd finalproject2/api1
++ python3 -m pytest --cov=application
+============================= test session starts ==============================
+platform linux -- Python 3.6.9, pytest-7.0.1, pluggy-1.0.0
+rootdir: /home/jenkins/.jenkins/workspace/Final Project 2/finalproject2/api1
+plugins: cov-3.0.0, requests-mock-1.9.3
+collected 10 items
+
+testing/test_mock.py ..........                                          [100%]
+
+----------- coverage: platform linux, python 3.6.9-final-0 -----------
+Name                      Stmts   Miss  Cover
+---------------------------------------------
+application/__init__.py      12      1    92%
+---------------------------------------------
+TOTAL                        12      1    92%
 
 ![image](https://user-images.githubusercontent.com/96538941/169009164-5ab740f2-5c61-4a67-a60b-f2731c7286a1.png)
 
