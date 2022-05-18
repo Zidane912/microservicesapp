@@ -59,11 +59,19 @@ The application should be running on port 80 now.
 
 Four tests were run using pytest, one for each microservice, giving an average of 93 % coverage, below are some screenshots of the report coverages:
 
+Service 1
+
 ![image](https://user-images.githubusercontent.com/96538941/169017452-e3eb7296-7e9a-465a-ad42-cf41c5fc4c37.png)
+
+Service 2
 
 ![image](https://user-images.githubusercontent.com/96538941/169013017-2494ca4e-188e-4684-a036-34eb7d9cb652.png)
 
+Service 3
+
 ![image](https://user-images.githubusercontent.com/96538941/169013254-5f29fcd7-3ccb-4e3a-ab6f-284011f80a74.png)
+
+Service 4
 
 ![image](https://user-images.githubusercontent.com/96538941/169013452-aa7cc6c5-48a5-4a56-b56e-03c57fcb880a.png)
 
@@ -97,7 +105,7 @@ Webhooks was used to keep track of changes made to the project:
 
 # Continuous Integration and Delivery Diagram
 
-![cicd drawio](https://user-images.githubusercontent.com/96538941/169002365-304c58cf-dff1-4a89-a4c4-6fe9f22cf05e.png)
+![cicd drawio (1)](https://user-images.githubusercontent.com/96538941/169061203-3f35eb9d-42e3-43d4-a315-e4e8d11e4309.png)
 
 # Future Improvements
 
