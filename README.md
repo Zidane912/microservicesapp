@@ -1,7 +1,7 @@
 # Architecture of Project
 This is a basic microservices application that is is deployed over several virtual machines and IP addresses. The architeccture of this project follows the diagram as show below.
 
-![Archofproject drawio](https://user-images.githubusercontent.com/96538941/168993804-f138e082-b798-4789-b112-0e788ea290b7.png)
+![Untitled Diagram drawio](https://user-images.githubusercontent.com/96538941/169118649-f17edc8a-587e-4004-a98d-a3d7e994c5ae.png)
 
 Firstly the microservices:
 
