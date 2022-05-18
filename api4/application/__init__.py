@@ -21,7 +21,7 @@ def post_desc():
     elif rpg_plus_stat[0] == 'Thief' and rpg_plus_stat[1] == 'HP: 800 MP: 250':
         desc = 'Quick and nimble, your job is to steal from the caravan of the Hero. No special traits.'
     elif rpg_plus_stat[0] == 'Assassin' and rpg_plus_stat[1] == 'HP: 1000 MP: 300':
-        desc = 'Silent and deadly, your role is to assassinate the royal king and other key figures you are employed to elimate. Special Trait 1: Invisibility, grants you to not be seen for a brief period of time. Special Trait 2: Slient footsteps'
+        desc = 'Silent and deadly, your role is to assassinate the royal king and other key figures you are employed to elimate. Special Trait 1: Invisibility, grants you to not be seen for a brief period of time. Special Trait 2: Slient footsteps.'
     elif rpg_plus_stat[0] == 'Mage' and rpg_plus_stat[1] == 'HP: 300 MP: 3000':
         desc = 'A strong intellect but a frail body, you have mastered the various disciplines of magic. Special Move: Magic Burst, expend all MP in an Area Of Effect Attack, attack power scales with remaining MP i.e. 100% will give more damage than 50% MP.'
     elif rpg_plus_stat[0] == 'Metal Slime' and rpg_plus_stat[1] == 'HP: 5000 MP: 0':
