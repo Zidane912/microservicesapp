@@ -103,3 +103,4 @@ Webhooks was used to keep track of changes made to the project:
 
 * Integrate user input system, i.e. application displays name of user and data generated is associated with user
 * Implement frontend with CSS to improve user experience
+* Test all lines of code to ensure 100% test coverage
