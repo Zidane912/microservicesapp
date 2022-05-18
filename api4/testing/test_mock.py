@@ -50,4 +50,4 @@ class TestService3(TestBase):
 
     def test_metal_slime(self):
         response = self.client.post(url_for('post_desc'), data=','.join(['Metal Slime', 'HP: 5000 MP: 0']))
-        self.assertIn(b'UNLUCKY, your role is simply to provide the Hero and his party with bonus EXP that is if they can hit you! Special Traits: 80,000 EXP, extremely high evasion', response.data)
+        self.assertIn(b'UNLUCKY, your role is simply to provide the Hero and his party with bonus EXP that is if they can hit you! Special Traits: 80,000 EXP, extremely high evasion.', response.data)
