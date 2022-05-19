@@ -1,3 +1,7 @@
+# Video Presentation Link
+
+https://drive.google.com/file/d/1Aycw6nqWjSYPhbdxzjaUksuSkpI-aS_9/view?usp=sharing
+
 # Architecture of Project
 This is a basic microservices application that is is deployed over several virtual machines and IP addresses. The architeccture of this project follows the diagram as show below.
 
