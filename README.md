@@ -81,7 +81,7 @@ Service 4
 
 # Ansible
 
-This section is here because I was unable to show the console output for Ansible during the presentation, this was executed by running the playbook and inventory files via the command 'ansible-playbook -i inventory.yaml playbook.yaml
+This section is here because I was unable to show the console output for Ansible during the presentation, this was executed by running the playbook and inventory files via the command 'ansible-playbook -i inventory.yaml playbook.yaml'.
 
 PLAY [managers] ***************************************************************************************************************
 
