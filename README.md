@@ -86,81 +86,106 @@ This section is here because I was unable to show the console output for Ansible
 PLAY [managers] ***************************************************************************************************************
 
 TASK [Gathering Facts] ********************************************************************************************************
+
 ok: [swarm-manager]
 
 TASK [docker : update and upgrade apt] ****************************************************************************************
+
 [WARNING]: The value True (type bool) in a string field was converted to 'True' (type string). If this does not look like what
 you expect, quote the entire value to ensure it does not change.
+
 ok: [swarm-manager]
 
 TASK [docker : Install requirements] ******************************************************************************************
+
 ok: [swarm-manager]
 
 TASK [docker : Add gpg key] ***************************************************************************************************
+
 ok: [swarm-manager]
 
 TASK [docker : Add apt repo] **************************************************************************************************
+
 ok: [swarm-manager]
 
 TASK [Install docker community edition] ***************************************************************************************
+
 ok: [swarm-manager]
 
 TASK [Install docker] *********************************************************************************************************
+
 ok: [swarm-manager]
 
 TASK [docker : Install JSONdiff and pyyaml] ***********************************************************************************
+
 ok: [swarm-manager]
 
 TASK [manager : Init a new swarm with default parameters] *********************************************************************
+
 ok: [swarm-manager]
 
 PLAY [workers] ****************************************************************************************************************
 
 TASK [Gathering Facts] ********************************************************************************************************
+
 ok: [swarm-worker]
 
 TASK [docker : update and upgrade apt] ****************************************************************************************
+
 ok: [swarm-worker]
 
 TASK [docker : Install requirements] ******************************************************************************************
+
 ok: [swarm-worker]
 
 TASK [docker : Add gpg key] ***************************************************************************************************
+
 ok: [swarm-worker]
 
 TASK [docker : Add apt repo] **************************************************************************************************
+
 ok: [swarm-worker]
 
 TASK [Install docker community edition] ***************************************************************************************
+
 ok: [swarm-worker]
 
 TASK [Install docker] *********************************************************************************************************
+
 ok: [swarm-worker]
 
 TASK [docker : Install JSONdiff and pyyaml] ***********************************************************************************
+
 ok: [swarm-worker]
 
 TASK [worker : print join token] **********************************************************************************************
+
 ok: [swarm-worker] => {
     "msg": "SWMTKN-1-5qlw0jf8r3hhfvbq12tnfxhq7xs44xs0drn0s3g1f6gh5mfkwa-2eay369n6frqcivigohkmod9r"
 }
 
 TASK [worker : Add nodes] *****************************************************************************************************
+
 ok: [swarm-worker]
 
 PLAY [managers] ***************************************************************************************************************
 
 TASK [Gathering Facts] ********************************************************************************************************
+
 ok: [swarm-manager]
 
 TASK [manager-clone-repo-from-git : Clone a repo with separate git directory] *************************************************
+
 changed: [swarm-manager]
 
 TASK [stack-deploy : Deploy stack from a compose file] ************************************************************************
+
 changed: [swarm-manager]
 
 PLAY RECAP ********************************************************************************************************************
+
 swarm-manager              : ok=12   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
 swarm-worker               : ok=10   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0  
 
 # User Journey Story
