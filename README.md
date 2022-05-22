@@ -1,6 +1,6 @@
 # Video Presentation Link
 
-https://drive.google.com/file/d/1Aycw6nqWjSYPhbdxzjaUksuSkpI-aS_9/view?usp=sharing
+![Untitled Diagram drawio (1)](https://user-images.githubusercontent.com/96538941/169713938-79632ac6-ed00-4bc3-b508-5711f0f832a2.png)
 
 # Architecture of Project
 This is a basic microservices application that is is deployed over several virtual machines and IP addresses. The architeccture of this project follows the diagram as show below.
