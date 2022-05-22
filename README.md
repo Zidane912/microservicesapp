@@ -192,12 +192,7 @@ swarm-worker               : ok=10   changed=0    unreachable=0    failed=0    s
 
 Here is the output showing that the swarm successfully had a manager (swarm-manager) and the worker (swarm-worker) successfully added as a node. Thus was displayed using the following command in the terminal 'sudo docker node ls'.
 
-
-ID                            HOSTNAME        STATUS    AVAILABILITY   MANAGER STATUS   ENGINE VERSION
-
-udba5opgwvk854spay57k8765 *   swarm-manager   Ready     Active         Leader           20.10.16
-
-zgn2tdofalpsk5mjffhnc3kxs     swarm-worker    Ready     Active                          20.10.16
+![image](https://user-images.githubusercontent.com/96538941/169714008-a9d7cf63-f6d4-4bd4-afc8-6e86fb174816.png)
 
 # User Journey Story
 
