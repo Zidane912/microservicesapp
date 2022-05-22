@@ -38,7 +38,7 @@ VM1 also deployed the application both on an nginx load balancer as well as depl
 
 # Setup
 
-This setup requires thrree virtual machines with the first virtual machine having the following dependencies installed Python, pytest, Flask, Docker, Docker-compose, Ansible, nginx, Jenkins and git. All three machines run Ubuntu and the ssh key generated from the first virtual machine must be inserted into the virtual machines of the other two via google cloud platform. Thereafter these commands are followed onto the first virtual machine,
+This setup requires thrree virtual medium machines with the first virtual machine having the following dependencies installed Python, pip, pytest, Flask, Docker, Docker-compose, Ansible, nginx, Jenkins and git. All three machines run Ubuntu and the ssh key generated from the first virtual machine must be inserted into the virtual machines of the other two via Google cloud platform. Thereafter these commands are followed onto the first virtual machine,
 
 1. git clone https://github.com/Zidane912/finalproject2.git && cd finalproject2
 2. ansible-playbook -i inventory.yaml playbook.yaml
@@ -47,15 +47,15 @@ On the swarm manager or the swarm worker virtual machine, running the following 
 
 curl localhost:5000
 
-Consequently the following could be typed into the browser:
+Consequently the following could be typed into your browser:
 
 [PUBLIC_IP_ADDRESS of either virtual machine]:5000
 
 As for nginx, the following command is followed on the first virtual machine:
 
 1. sudo nano /etc/nginx/nginx.conf
-2. Insert the text from the nginx.conf file into the terminal once step 1 has been executed into the terminal, ensuring to replace the private IP addresses found on Google Cloud Platform.
-3. curl localhost
+2. Insert the text from the nginx.conf file into the terminal once step 1 has been executed into the terminal, ensuring to replace the private IP addresses found on Google Cloud Platform for the swarm-manager and swarm-worker.
+3. curl localhost on both machines and the output should be displayed or enter the public IP address for the machine nginx was installed on into the web browser without specifying a port.
 
 The application should be running on port 80 now.
 
@@ -81,7 +81,7 @@ Service 4
 
 # Ansible
 
-This section is here because I was unable to show the console output for Ansible during the presentation,
+This section is here because I was unable to show the console output for Ansible during the presentation, this was executed by running the playbook and inventory files via the command 'ansible-playbook -i inventory.yaml playbook.yaml
 
 PLAY [managers] ***************************************************************************************************************
 
@@ -186,7 +186,18 @@ PLAY RECAP *********************************************************************
 
 swarm-manager              : ok=12   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 
-swarm-worker               : ok=10   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0  
+swarm-worker               : ok=10   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+
+# Docker Swarm-Manager
+
+Here is the output showing that the swarm successfully had a manager (swarm-manager) and the worker (swarm-worker) successfully added as a node. Thus was displayed using the following command in the terminal 'sudo docker node ls'.
+
+
+ID                            HOSTNAME        STATUS    AVAILABILITY   MANAGER STATUS   ENGINE VERSION
+
+udba5opgwvk854spay57k8765 *   swarm-manager   Ready     Active         Leader           20.10.16
+
+zgn2tdofalpsk5mjffhnc3kxs     swarm-worker    Ready     Active                          20.10.16
 
 # User Journey Story
 
@@ -223,6 +234,7 @@ Webhooks was used to keep track of changes made to the project:
 # Future Improvements
 
 * Integrate user input system, i.e. application displays name of user and data generated is associated with user
+* Increasing number of APIs for extra functionality e.g. service 5 autogenerates a move such as 'ATTACK' or 'DEFEND'
 * Implement frontend with CSS to improve user experience
 * Test all lines of code to ensure 100% test coverage
 * Configuring Jenkins Pipeline to run ansible to further automate this project
