@@ -1,11 +1,11 @@
 # Video Presentation Link
 
-![Untitled Diagram drawio (1)](https://user-images.githubusercontent.com/96538941/169713938-79632ac6-ed00-4bc3-b508-5711f0f832a2.png)
+https://drive.google.com/file/d/1Aycw6nqWjSYPhbdxzjaUksuSkpI-aS_9/view?usp=sharing
 
 # Architecture of Project
 This is a basic microservices application that is is deployed over several virtual machines and IP addresses. The architeccture of this project follows the diagram as show below.
 
-![Untitled Diagram drawio](https://user-images.githubusercontent.com/96538941/169118649-f17edc8a-587e-4004-a98d-a3d7e994c5ae.png)
+![Untitled Diagram drawio (1)](https://user-images.githubusercontent.com/96538941/169713938-79632ac6-ed00-4bc3-b508-5711f0f832a2.png)
 
 Firstly the microservices:
 
