@@ -13,14 +13,14 @@ Firstly the microservices:
 Service 1 was used to both display and utilise get and post requests from the other services. This was start off by performing a get request from service 2.
 
 2. Service 2:
-This service contained a list of names for rpg roles such as Hero or Healer and the like upto ten items and to grab an item from this list a randint dependency was imprted. Service 2 would generate one of these names by random. Thereafter service 1 would make a get reuqest to service 2 to retirve said rpg role.
+This service contained a list of names for rpg roles such as Hero or Healer and the like upto ten items and to grab an item from this list a randint dependency was imported. Service 2 would generate one of these names by random. Thereafter service 1 would make a get reuqest to service 2 to retrieve said rpg role.
 
 3. Service 3:
 This service contained several statistic values based on what was generated from service 2. service 1, using the data generated from service 2, would make a post request to service 3 and depending on the data generated service 3 would provide a statistic for said rpg role such as 'HP: 300 MP: 3000'.
 
 4. Service 4:
 Service 1 would make a post request to this service that generated data based off services 2 and 3. So within service 1 the datas of service 2 and 3 were 
-concatenate into a single string. There after this was posted to service 4 where it was split into two items in a single list thus allowing it to be indexed into the data from service 2 and the data from service 3 making both readily avaiable in service 4. Service 4 based on the conditions of service 2 and 3 would generate a descripton of this rpg role.
+concatenate into a single string. Thereafter this was posted to service 4 where it was split into two items in a single list thus allowing it to be indexed into the data from service 2 and the data from service 3 making both readily avaiable in service 4. Service 4 based on the conditions of service 2 and 3 would generate a descripton of this rpg role.
 
 All of this is then generated and displayed on from service 1 which returns the various values from all services into the html file, below are some examples of what would be displayed:
 
@@ -30,7 +30,7 @@ All of this is then generated and displayed on from service 1 which returns the 
 
 ![image](https://user-images.githubusercontent.com/96538941/169007675-26a533cf-1467-431e-96b9-5a586baafd75.png)
 
-As for the arhcitecture of the virtual machines (VM) themselves. VM1, using an Ansible playbook, dealt with the deployment of the application using an ansible play book to build and install onto VM2 (swarm manager) whereby the repository of the application was cloned to from GitHub to the swarm manager and thereafter a docker swarm was initialised and VM3 (swarm worker) was added to the swarm. The application was then build and deployed from the swarm manager and thus was avaiable on both the swarm worker and manager on port 5000 of their public IP addresses. The ansible playbook would also push images to docker hub, below is a screen shot of the images from docker hub used for the application:
+As for the arhcitecture of the virtual machines (VM) themselves. VM1, using an Ansible playbook, dealt with the deployment of the application using an ansible play book to build and install onto VM2 (swarm manager) whereby the repository of the application was cloned to from GitHub to the swarm manager and thereafter a docker swarm was initialised and VM3 (swarm worker) was added to the swarm. The application was then built and deployed from the swarm manager and thus was avaiable on both the swarm worker and manager on port 5000 of their public IP addresses. The ansible playbook would also push images to docker hub, below is a screen shot of the images from docker hub used for the application:
 
 ![image](https://user-images.githubusercontent.com/96538941/169011519-9fe824bc-c191-4af2-8ad4-dbcaafb74474.png)
 
@@ -212,7 +212,7 @@ Here is the final set of build steps of the Jenkins pipeline:
 
 ![image](https://user-images.githubusercontent.com/96538941/169018009-a4a9e5e0-cfdb-4b39-8582-753ab415b9e1.png)
 
-**NOTE:** Although the final step 'Deployment of Application gives an error, the pipeline still functtions perfectly. This error is due to ports already being assigned on this virtual machine, here is the error message that is shown on the console output:
+**NOTE:** Although the final step 'Deployment of Application gives an error, the pipeline still functions perfectly. This error is due to ports already being assigned on this virtual machine, here is the error message that is shown on the console output:
 
 Error response from daemon: driver failed programming external connectivity on endpoint finalproject2-service3-1 (370071175bd03098292c6662b5ec5e190661ef8998a89662527b7b830f2746d3): Bind for 0.0.0.0:5002 failed: port is already allocated
 
